@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void map (int *PosX, int *PosY, char TableauMap [40] [40]);
+#include "Terrain1.h"
 
 int main()
 {

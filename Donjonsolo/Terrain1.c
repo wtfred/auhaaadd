@@ -1,3 +1,4 @@
+#include "Terrain1.h"
 
 void map (int *PosX, int *PosY, char TableauMap [40] [40]) // Fonction pour terrain du premier niveau
 {
