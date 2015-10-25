@@ -1,5 +1,10 @@
 # depslib dependency file v1.0
-1445799400 source:c:\users\lucas\desktop\nouveau dossier\donjon\main.c
+1445803736 source:c:\users\lucas\desktop\nouveau dossier\donjon\main.c
 	<stdio.h>
 	<stdlib.h>
+	"map.h"
+
+1445803320 c:\users\lucas\desktop\nouveau dossier\donjon\map.h
+
+1445803320 source:c:\users\lucas\desktop\nouveau dossier\donjon\map.c
 
