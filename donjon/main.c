@@ -7,7 +7,7 @@
 
 
 int inputUtilisateur (int *PosX, int *PosY, int *bourse, char tableauMap [20] [20]);
-void affichage (int *PosX, int *PosY, char tableauMap [20] [20]);
+
 int combat (int *bourse);
 void Menu ();
 void creationperso ();
@@ -19,14 +19,15 @@ int main()
     int PosX = 1;
     int PosY = 1;
     int bourse = 50;
-    Menu();
-    donjonMap (&PosX,&PosY, tableauMap);
+    Menu(); // menu principal1
 
-    while (fin == 0)
+    donjonMapy (&PosX,&PosY, tableauMap); // initialisation du donjon
+
+    while (fin == 0) // boucle de jeu
     {
-        fin = inputUtilisateur (&PosX,&PosY, &bourse, tableauMap);
-        printf("votre position est %d,%d\n", PosX,PosY);
-        affichage (&PosX, &PosY, tableauMap);
+        fin = inputUtilisateur (&PosX,&PosY, &bourse, tableauMap); // demande d'input à l'utilisateur
+        printf("votre position est %d,%d\n", PosX,PosY); // indique la position sur le tableau
+        affichage (&PosX, &PosY, tableauMap); // affiche le tableau
     }
 
     return 0;
@@ -64,7 +65,7 @@ void Menu ()
     }
 }
 
-void creationperso ()
+void creationperso () // creation du personnage et de ses variables
 {
     char nomperso [50]; // nombre de cases pour le pseudo du personnage
     printf("Quel est votre nom?\n");
@@ -74,21 +75,6 @@ void creationperso ()
 }
 
 
-void affichage (int *PosX, int *PosY, char tableauMap [20] [20])
-{
-    int x = 0;
-    int y = 0;
-    tableauMap [*PosY] [*PosX] = '@'; // pion personnage
-
-    for (x = 0; x < 20; x++)
-    {
-        for (y = 0 ; y < 20 ; y++)
-        {
-            printf ("%c",tableauMap [x] [y]); // affiche le tableau sur la console
-        }
-    }
-        printf("\nOu souhaitez vous vous deplacer?\nN/S/W/E\n\n");
-}
 
 int menuJeu(int *PosX, int *PosY, int *bourse, char tableauMap [20] [20])
 {
@@ -102,29 +88,31 @@ int menuJeu(int *PosX, int *PosY, int *bourse, char tableauMap [20] [20])
     printf("6. Quitter le jeu\n");
     scanf ("%i", &inputMenu);
 
-    if (inputMenu == 1)
+    if (inputMenu == 1) // affiche menu caracs
     {
         return 0;
     }
-    if (inputMenu == 2)
+    if (inputMenu == 2) // affichage menu objets
     {
+        system("cls");
+        printf("Vous avez %i or\n", bourse);
         return 0;
     }
-    if (inputMenu == 3)
-    {
-        return 0;
-    }
-
-    if (inputMenu == 4)
-    {
-        return 0;
-    }
-    if (inputMenu == 5)
+    if (inputMenu == 3) // affiche menu equipement
     {
         return 0;
     }
 
-    if (inputMenu == 6)
+    if (inputMenu == 4) // menu de sauvegarde
+    {
+        return 0;
+    }
+    if (inputMenu == 5) // retour en jeu
+    {
+        return 0;
+    }
+
+    if (inputMenu == 6) // quitter le jeu
     {
         return 1;
     }
@@ -260,7 +248,8 @@ void feuilleMonstre ()
 
 }
 */
-int combat (int *bourse)
+int combat (int *bourse) // temporaire
+
 {
     int pvChar = 200;
     int pvCharRestant = pvChar;

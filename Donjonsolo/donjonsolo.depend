@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1445355047 source:c:\users\lucas\documents\donjonsolo\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1445284614 source:c:\users\lucas\documents\donjonsolo\terrain1.c
+
+1445354540 source:c:\users\lucas\documents\donjonsolo\mouvement.c
+
