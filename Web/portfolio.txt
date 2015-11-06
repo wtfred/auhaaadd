@@ -1,0 +1,32 @@
+
+à rendre avant le 20/11/2015 23H59
+
+
+1) Qualité du code
+
+2) HTML / CSS 	bien indenté
+
+3) responsive ( portable,etc) via bootstrap?
+
+4) prise de risque (JS, Paralax? etc)
+
+5) fichiers dans les bons types ( .html, .jade, etc...)
+
+6) fichiers zippés (tar.gz, zip...)
+
+7) fichiers rangés dans des dossiers ( sauf html?)
+
+8) UN FICHIER INDEX.HTML /!\
+
+9) pas d'erreur en console (pas d'image 404, pas d'erreur JS, si erreur JS incomprise, le préciser dans le mail)
+
+10) pas de copier coller
+
+11) pas de balise : - <b> <i> <font> <u> ( les faire en  fichier css)|| la balise <Strong> est autorisée
+
+-5 pts par jour de retard !
+
+NOM DU DOSSIER = (NOM-PRENOM-B1.z)
+
+alexis.ducerf@gmail.com
+
